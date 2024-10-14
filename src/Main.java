@@ -1,24 +1,25 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Screen Match");
+        System.out.println("This is Screen Match");
         System.out.println("Movie: Top Gun: Maverick");
 
-        int yearOfRelease = 2022;
-        System.out.println("Year of Release: " + yearOfRelease);
-        boolean subscription = true;
-        double filmNote = 8.1;
-        double media = (9.8 + 6.3 + 8.0) /3;
-        System.out.println(media);
-        String sinopse;
-        sinopse = """
-                Top Gun Movie
-                Adventure movie with 80s heartthrob
+        int releaseYear = 2022;
+        System.out.println("Release year: " + releaseYear);
+        boolean includedInPlan = true;
+        double movieRating = 8.1;
+        // Average calculated by the ratings from Jack, Paulo, and Suelem
+        double average = (9.8 + 6.3 + 8.0) / 3;
+        System.out.println(average);
+        String synopsis;
+        synopsis = """
+                Movie: Top Gun
+                Adventure movie with an 80s heartthrob
                 Very good!
                 Release year
-                """ + yearOfRelease;
-        System.out.println(sinopse);
+                """ + releaseYear;
+        System.out.println(synopsis);
 
-        int classification = (int) (media /2);
+        int classification = (int) (average / 2);
         System.out.println(classification);
     }
 }
